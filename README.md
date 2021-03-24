@@ -82,6 +82,7 @@ The client side will give the following output
 -- Bruce JOINED --
 Bruce>>
 ```
+Using the same method, more clients could join the same server. The client can type the intput on the keyboard and send to the server, and the server will broadcast the message to all the other clients.
  
 ## Contact
 Created by Buyun Liang [liang664@umn.edu] (https://www.linkedin.com/in/buyun-liang/) and Rick Wang - feel free to contact me if you have any questions!
