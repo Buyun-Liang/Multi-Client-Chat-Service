@@ -3,16 +3,20 @@ The main goal of this chat service is to achieve inter-process communication (be
 
 ## Table of contents
 * [General Information](#general-information)
+* [File Description](#file-description)
 * [Screenshots](#screenshots)
 * [Code Examples](#code-examples)
 * [Contact](#contact)
 
+## General Information
 This project includes two parts:
 
-Server
+**Server**
+
 server starts the bl_server to manage the chatroom. The server is non-iterative.
 
-Client
+**Client**
+
 User who wants to chat could run the bl_client which takes input typed on the keyboard and sends it to the server. The server broadcasts the input to all other clients who can respond by typing their own input.
 
 The key parts of this project includes:
@@ -22,6 +26,25 @@ The key parts of this project includes:
 3. Alarm signals for periodic behavior
 4. Input multiplexing with poll()
 5. Multiple threads in the client to handle typed input versus info from the server
+
+## File Description
+*Makefile* is used for building project and running tests;
+
+*server_funcs.c* contains service routines for the server;
+
+*bl_server.c* is the main function for bl_server executable;
+
+*bl_client.c* is the main function for bl_client executable;
+
+*blather.h* is the header file which contains required structs, defines, and prototypes;
+
+*util.c* contains utility methods debug messages and checking system call returns;
+
+*simpio.c* is the simplified terminal I/O to get nice interactive sessions;
+
+*simpio_demo.c* is used for demostrating simpio features, model for bl_client.c.
+
+## Screen Shots
 
 ## Code Examples
 To build the executable program bl_server and bl_client, run:
