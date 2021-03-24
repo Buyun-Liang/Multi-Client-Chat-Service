@@ -40,6 +40,48 @@ gcc -Wall -g  -c simpio.c
 gcc -Wall -g  -o bl_client bl_client.o simpio.o util.o -lpthread 
 bl_client is ready
 ```
+Run the command: 
+```bash
+./bl_server <server_name>
+```
+for example, 
+```bash
+./bl_server umn_server
+```
+The umn_server will start a chat room with following output
+```bash
+LOG: BEGIN: server_start()
+LOG: END: server_start()
+LOG: BEGIN: server_check_sources()
+LOG: poll()'ing to check 1 input sources
+```
+Run the command: 
+```bash
+./bl_client <server_name> <client_name>
+```
+for example, 
+```bash
+./bl_client umn_server Bruce
+```
+The umn_client will join the chat room. The server side will give the following output
+```bash
+LOG: poll() completed with return value 1
+LOG: join_ready = 1
+LOG: END: server_check_sources()
+LOG: BEGIN: server_handle_join()
+LOG: join request for new client 'Bruce'
+LOG: BEGIN: server_add_client()
+LOG: END: server_add_client()
+LOG: END: server_handle_join()
+LOG: BEGIN: server_check_sources()
+LOG: poll()'ing to check 2 input sources
+```
+
+The client side will give the following output
+```bash
+-- Bruce JOINED --
+Bruce>>
+```
  
 ## Contact
 Created by Buyun Liang [liang664@umn.edu] (https://www.linkedin.com/in/buyun-liang/) and Rick Wang - feel free to contact me if you have any questions!
