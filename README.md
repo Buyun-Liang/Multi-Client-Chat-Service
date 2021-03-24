@@ -45,6 +45,12 @@ The key parts of this project includes:
 *simpio_demo.c* is used for demostrating simpio features, model for bl_client.c.
 
 ## Screen Shots
+This screenshot is to show the output of server and several clients mid-chat.
+
+The the server umn_server is started in the leftside large terminal and shows the output about current process.
+
+There are 3 clients who log into the server and specfify their name to be Bruce, Mike and Clark.
+
 ![Example screenshot](./screenshot.png)
 
 ## Code Examples
