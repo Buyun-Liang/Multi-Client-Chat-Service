@@ -45,6 +45,7 @@ The key parts of this project includes:
 *simpio_demo.c* is used for demostrating simpio features, model for bl_client.c.
 
 ## Screen Shots
+![Example screenshot](./screenshot.png)
 
 ## Code Examples
 To build the executable program bl_server and bl_client, run:
