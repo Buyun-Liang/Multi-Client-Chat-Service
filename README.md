@@ -4,7 +4,7 @@ The main goal of this chat service is to achieve inter-process communication (be
 ## Table of contents
 * [General Information](#general-information)
 * [File Description](#file-description)
-* [Screenshots](#screenshots)
+* [Screenshots](#screen-shots)
 * [Code Examples](#code-examples)
 * [Contact](#contact)
 
