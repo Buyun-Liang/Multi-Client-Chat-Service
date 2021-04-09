@@ -13,7 +13,7 @@ This project includes two parts:
 
 **Server**
 
-server starts the bl_server to manage the chatroom. The server is non-iterative.
+server starts the bl_server to manage the chatroom. The server is non-interactive.
 
 **Client**
 
